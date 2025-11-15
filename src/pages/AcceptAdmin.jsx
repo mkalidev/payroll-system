@@ -35,7 +35,7 @@ export default function AcceptAdmin() {
           accept the invitation.
         </p>
         <div
-          className="bg-c-color text-white px-4 py-2 rounded hover:bg-emerald-600 transition-colors cursor-pointer w-full text-center"
+          className="bg-c-color text-white px-4 py-2 rounded hover:bg-purple-600 transition-colors cursor-pointer w-full text-center"
           onClick={handleAccept}
         >
           {isPending ? "Accepting..." : "Accept Invitation"}
