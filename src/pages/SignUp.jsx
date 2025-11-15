@@ -343,7 +343,7 @@ export default function SignUp() {
             type="submit"
             className={`px-5 py-3 rounded-md text-white cursor-pointer transition-colors ${
               isPasswordValid && imageFile
-                ? "bg-c-color hover:bg-emerald-600"
+                ? "bg-c-color hover:bg-purple-600"
                 : "bg-gray-300 text-gray-500 cursor-not-allowed"
             }`}
             disabled={!isPasswordValid || !imageFile || isSigningUp}
