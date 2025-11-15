@@ -46,7 +46,7 @@ export default function Admins() {
         <h1 className="text-xl font-bold text-gray-800">Admins</h1>
         {user?._id === singleWorkspace?.userId?._id && (
           <button
-            className="bg-c-color text-white px-6 py-2.5 text-sm rounded-lg cursor-pointer hover:bg-emerald-600 transition-colors duration-200"
+            className="bg-c-color text-white px-6 py-2.5 text-sm rounded-lg cursor-pointer hover:bg-purple-600 transition-colors duration-200"
             onClick={() => setShowInviteModal(true)}
             disabled={isInvitingAdmin}
           >
