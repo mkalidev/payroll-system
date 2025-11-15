@@ -28,7 +28,7 @@ const UpdateEmployeeDrawer = ({ setIsOpen, employeeId }) => {
     <div className="fixed inset-0 z-50 flex h-screen">
       {/* Backdrop */}
       <div
-        className="flex-1 bg-c-bg/20 backdrop-blur-xs bg-opacity-50"
+        className="flex-1 bg-black/20 backdrop-blur-xs bg-opacity-50"
         onClick={() => setIsOpen(false)}
       />
 
@@ -140,7 +140,7 @@ const UpdateEmployeeDrawer = ({ setIsOpen, employeeId }) => {
           </div>
           <div className="flex space-x-3">
             <button
-              className="flex-1 py-4 px-6 bg-c-color text-white cursor-pointer rounded-lg text-sm font-medium hover:bg-c-bg transition-colors"
+              className="flex-1 py-4 px-6 bg-c-color text-white cursor-pointer rounded-lg text-sm font-medium hover:bg-emerald-600 transition-colors"
               onClick={handleSubmit(onSubmit)}
             >
               {isUpdatingEmployee ? "Updating..." : "Update Employee"}

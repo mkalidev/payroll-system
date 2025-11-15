@@ -343,7 +343,7 @@ export default function SignUp() {
             type="submit"
             className={`px-5 py-3 rounded-md text-white cursor-pointer transition-colors ${
               isPasswordValid && imageFile
-                ? "bg-c-color hover:bg-c-bg"
+                ? "bg-c-color hover:bg-emerald-600"
                 : "bg-gray-300 text-gray-500 cursor-not-allowed"
             }`}
             disabled={!isPasswordValid || !imageFile || isSigningUp}
@@ -358,7 +358,7 @@ export default function SignUp() {
           </div>
 
           <div
-            className="px-5 py-3 rounded-md flex justify-center text-white cursor-pointer transition-colors bg-c-color hover:bg-c-bg"
+            className="px-5 py-3 rounded-md flex justify-center text-white cursor-pointer transition-colors bg-c-color hover:bg-emerald-600"
             onClick={() => login()}
           >
             Signup with Privy

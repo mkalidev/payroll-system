@@ -103,7 +103,7 @@ export default function Login() {
           </div>
           <button
             type="submit"
-            className={`px-5 py-3 rounded-md text-white cursor-pointer transition-colors bg-c-color hover:bg-c-bg`}
+            className={`px-5 py-3 rounded-md text-white cursor-pointer transition-colors bg-c-color hover:bg-emerald-600`}
             disabled={errors.username || errors.password}
           >
             {isLoginingIn ? "Logging in..." : "Login"}
@@ -116,7 +116,7 @@ export default function Login() {
           </div>
 
           <div
-            className="px-5 py-3 rounded-md flex justify-center text-white cursor-pointer transition-colors bg-c-color hover:bg-c-bg"
+            className="px-5 py-3 rounded-md flex justify-center text-white cursor-pointer transition-colors bg-c-color hover:bg-emerald-600"
             onClick={() => login()}
           >
             Login with Privy

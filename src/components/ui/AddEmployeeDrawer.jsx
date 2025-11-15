@@ -87,7 +87,7 @@ const AddEmployeeDrawer = ({ setIsOpen, workspaceId }) => {
     <div className="fixed inset-0 z-50 flex h-screen">
       {/* Backdrop */}
       <div
-        className="flex-1 bg-c-bg/20 backdrop-blur-xs bg-opacity-50"
+        className="flex-1 bg-black/20 backdrop-blur-xs bg-opacity-50"
         onClick={() => setIsOpen(false)}
       />
 
@@ -159,7 +159,7 @@ const AddEmployeeDrawer = ({ setIsOpen, workspaceId }) => {
                     accept=".csv"
                     ref={fileInputRef}
                     onChange={handleFileChange}
-                    className="block w-full text-sm text-gray-700 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-semibold file:bg-c-color file:text-white hover:file:bg-c-bg"
+                    className="block w-full text-sm text-gray-700 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-semibold file:bg-c-color file:text-white hover:file:bg-emerald-600"
                   />
                 </div>
                 {parseError && (
@@ -178,7 +178,7 @@ const AddEmployeeDrawer = ({ setIsOpen, workspaceId }) => {
               <div className="flex space-x-3">
                 <button
                   type="submit"
-                  className="flex-1 py-4 px-6 bg-c-color text-white cursor-pointer rounded-lg text-sm font-medium hover:bg-c-bg transition-colors disabled:bg-gray-300 disabled:cursor-not-allowed"
+                  className="flex-1 py-4 px-6 bg-c-color text-white cursor-pointer rounded-lg text-sm font-medium hover:bg-emerald-600 transition-colors disabled:bg-gray-300 disabled:cursor-not-allowed"
                   disabled={parsedEmployees.length === 0 || isCreatingEmployee}
                 >
                   {isCreatingEmployee ? "Adding..." : "Add Employees"}
@@ -283,7 +283,7 @@ const AddEmployeeDrawer = ({ setIsOpen, workspaceId }) => {
               <div className="flex space-x-3 mt-6">
                 <button
                   type="submit"
-                  className="flex-1 py-4 px-6 bg-c-color text-white cursor-pointer rounded-lg text-sm font-medium hover:bg-c-bg transition-colors"
+                  className="flex-1 py-4 px-6 bg-c-color text-white cursor-pointer rounded-lg text-sm font-medium hover:bg-emerald-600 transition-colors"
                   disabled={isCreatingEmployee}
                 >
                   {isCreatingEmployee ? "Adding..." : "Add Employee"}

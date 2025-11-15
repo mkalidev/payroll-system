@@ -45,10 +45,10 @@ export default function Sidebar() {
   const { pathname } = useLocation();
 
   return (
-    <div className="hidden md:block text-white">
-      <div className="bg-c-bg w-[16rem] sticky top-0 border-r border-r-white/10 h-screen flex flex-col justify-between">
+    <div className="hidden md:block text-gray-700">
+      <div className="bg-white w-[16rem] sticky top-0 border-r border-gray-200 h-screen flex flex-col justify-between">
         <div className="w-full space-y-2">
-          <div className="py-5 px-3 flex items-center gap-2 border-b border-b-white/10 h-[85.12px]">
+          <div className="py-5 px-3 flex items-center gap-2 border-b border-gray-100 h-[85.12px]">
             <div
               className={`w-full h-full px-3 py-3 flex items-center justify-left`}
             >
@@ -59,7 +59,7 @@ export default function Sidebar() {
             <WorkspaceSelector />
           </div> */}
 
-          <div className="py-3 pr-3 flex flex-col gap-3 w-full border-b border-b-white/10">
+          <div className="py-3 pr-3 flex flex-col gap-3 w-full border-b border-gray-100">
             {data.map((item) => {
               const match = matchPath(
                 { path: item.link, end: item.link === "/" },
@@ -86,7 +86,7 @@ export default function Sidebar() {
               );
             })}
           </div>
-          <div className="py-3 pr-3 flex flex-col gap-3 w-full border-b border-b-white/10">
+          <div className="py-3 pr-3 flex flex-col gap-3 w-full border-b border-gray-100">
             {data2.map((item) => {
               const isActive = pathname === item.link;
               return (

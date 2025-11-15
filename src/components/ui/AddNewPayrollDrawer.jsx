@@ -50,7 +50,7 @@ const AddNewPayrollDrawer = ({ setIsOpen, slug }) => {
   return (
     <div className="fixed inset-0 z-50 flex h-screen">
       <div
-        className="flex-1 bg-c-bg/20 backdrop-blur-xs bg-opacity-50"
+        className="flex-1 bg-black/20 backdrop-blur-xs bg-opacity-50"
         onClick={() => setIsOpen(false)}
       />
       <div className="w-full max-w-xl bg-white h-screen overflow-y-auto shadow-2xl">

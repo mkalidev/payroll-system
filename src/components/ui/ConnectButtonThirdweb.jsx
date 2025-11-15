@@ -206,7 +206,7 @@ export default function ConnectButtonThirdweb({
             <div className="space-y-2">
               {isApprovalSuccess ? (
                 <button
-                  className="w-full flex-1 py-4 px-6 bg-c-color text-white cursor-pointer rounded-lg text-sm font-medium hover:bg-c-bg transition-colors disabled:bg-gray-300 disabled:cursor-not-allowed"
+                  className="w-full flex-1 py-4 px-6 bg-c-color text-white cursor-pointer rounded-lg text-sm font-medium hover:bg-emerald-600 transition-colors disabled:bg-gray-300 disabled:cursor-not-allowed"
                   onClick={handleDistributePayroll}
                   disabled={isPending || isConfirming || isPaused}
                 >
@@ -234,7 +234,7 @@ export default function ConnectButtonThirdweb({
                     isPending ||
                     isConfirming
                   }
-                  className="w-full px-4 py-4 bg-c-bg text-white cursor-pointer rounded-lg text-sm font-medium hover:bg-gray-500 transition-colors disabled:bg-gray-300 disabled:cursor-not-allowed"
+                  className="w-full px-4 py-4 bg-white text-gray-800 border border-gray-200 cursor-pointer rounded-lg text-sm font-medium hover:bg-gray-50 transition-colors disabled:bg-gray-200 disabled:cursor-not-allowed"
                 >
                   {isApproving || isApprovalConfirming ? (
                     <Spinner />

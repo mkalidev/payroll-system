@@ -35,7 +35,7 @@ export default function ForgetPassword() {
           })}
         />
         <button
-          className="bg-c-color text-white px-4 py-3 rounded hover:bg-c-bg transition-colors cursor-pointer w-full text-center"
+          className="bg-c-color text-white px-4 py-3 rounded hover:bg-emerald-600 transition-colors cursor-pointer w-full text-center"
           onClick={handleSubmit(onSubmit)}
           disabled={isPending}
         >
