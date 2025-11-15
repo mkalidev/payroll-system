@@ -28,7 +28,7 @@ export default function AllWorkspace() {
         <div className="flex items-center justify-between gap-3">
           <p className="font-semibold text-[16px] md:text-[24px]">Workspace</p>
           <button
-            className="bg-c-bg-2 px-5 py-3 rounded-lg text-xs text-white md:text-sm font-medium bg-c-color hover:bg-c-bg transition-colors cursor-pointer"
+            className="px-5 py-3 rounded-lg text-xs text-white md:text-sm font-medium bg-c-color hover:bg-emerald-600 transition-colors cursor-pointer"
             onClick={() => setIsOpen(true)}
           >
             Create New Workspace
@@ -48,7 +48,7 @@ export default function AllWorkspace() {
                   No workspace yet!
                 </p>
                 <button
-                  className="bg-c-color hover:bg-c-bg px-6 py-2.5 text-white rounded-lg cursor-pointer"
+                  className="bg-c-color hover:bg-emerald-600 px-6 py-2.5 text-white rounded-lg cursor-pointer"
                   onClick={() => setIsOpen(true)}
                 >
                   Create Workspace
