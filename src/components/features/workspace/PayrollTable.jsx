@@ -154,7 +154,7 @@ export default function PayrollTable({ payrolls }) {
                           `/workspace/${slug}/payroll/invoice?tx=${payroll?.tx}`
                         )
                       }
-                      className="text-sm bg-c-color rounded-lg px-4 py-2.5 font-medium text-white cursor-pointer hover:bg-emerald-600 transition-colors duration-200"
+                      className="text-sm bg-c-color rounded-lg px-4 py-2.5 font-medium text-white cursor-pointer hover:bg-purple-600 transition-colors duration-200"
                     >
                       View Invoice
                     </button>
