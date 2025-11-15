@@ -358,7 +358,7 @@ export default function SignUp() {
           </div>
 
           <div
-            className="px-5 py-3 rounded-md flex justify-center text-white cursor-pointer transition-colors bg-c-color hover:bg-emerald-600"
+            className="px-5 py-3 rounded-md flex justify-center text-white cursor-pointer transition-colors bg-c-color hover:bg-purple-600"
             onClick={() => login()}
           >
             Signup with Privy
