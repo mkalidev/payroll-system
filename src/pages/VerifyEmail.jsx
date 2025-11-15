@@ -79,7 +79,7 @@ export default function VerifyEmail() {
 
             <button
               type="submit"
-              className={`px-5 py-3 rounded-md text-white cursor-pointer transition-colors bg-c-color hover:bg-emerald-600`}
+              className={`px-5 py-3 rounded-md text-white cursor-pointer transition-colors bg-c-color hover:bg-purple-600`}
               onClick={(e) => {
                 e.preventDefault();
                 handleVerify();
