@@ -21,7 +21,7 @@ function doCommit() {
     .replace(/\..+/, "");
   try {
     execSync("git add -A", { stdio: "inherit" });
-    execSync(`git commit -m "feat: update ${timestamp}"`, { stdio: "inherit" });
+    execSync(`git commit -m "feat: added changes"`, { stdio: "inherit" });
     console.log(`[auto-commit] Committed changes at ${timestamp}`);
   } catch (e) {
     console.error("[auto-commit] Error during commit:", e);
