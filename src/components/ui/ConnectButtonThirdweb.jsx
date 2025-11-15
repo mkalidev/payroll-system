@@ -206,7 +206,7 @@ export default function ConnectButtonThirdweb({
             <div className="space-y-2">
               {isApprovalSuccess ? (
                 <button
-                  className="w-full flex-1 py-4 px-6 bg-c-color text-white cursor-pointer rounded-lg text-sm font-medium hover:bg-emerald-600 transition-colors disabled:bg-gray-300 disabled:cursor-not-allowed"
+                  className="w-full flex-1 py-4 px-6 bg-c-color text-white cursor-pointer rounded-lg text-sm font-medium hover:bg-purple-600 transition-colors disabled:bg-gray-300 disabled:cursor-not-allowed"
                   onClick={handleDistributePayroll}
                   disabled={isPending || isConfirming || isPaused}
                 >
