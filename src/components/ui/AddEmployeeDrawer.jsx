@@ -178,7 +178,7 @@ const AddEmployeeDrawer = ({ setIsOpen, workspaceId }) => {
               <div className="flex space-x-3">
                 <button
                   type="submit"
-                  className="flex-1 py-4 px-6 bg-c-color text-white cursor-pointer rounded-lg text-sm font-medium hover:bg-emerald-600 transition-colors disabled:bg-gray-300 disabled:cursor-not-allowed"
+                  className="flex-1 py-4 px-6 bg-c-color text-white cursor-pointer rounded-lg text-sm font-medium hover:bg-purple-600 transition-colors disabled:bg-gray-300 disabled:cursor-not-allowed"
                   disabled={parsedEmployees.length === 0 || isCreatingEmployee}
                 >
                   {isCreatingEmployee ? "Adding..." : "Add Employees"}
