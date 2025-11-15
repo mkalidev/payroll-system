@@ -20,7 +20,7 @@ export default function Payroll() {
         <h1 className="text-xl font-bold text-gray-800">Payroll</h1>
         {user?._id === singleWorkspace?.userId?._id && (
           <button
-            className="bg-c-color text-white text-sm px-6 py-2.5 rounded-lg cursor-pointer hover:bg-c-bg transition-colors duration-200"
+            className="bg-c-color text-white text-sm px-6 py-2.5 rounded-lg cursor-pointer hover:bg-emerald-600 transition-colors duration-200"
             onClick={() => navigate(`/workspace/${slug}/payroll/create`)}
           >
             New Payroll

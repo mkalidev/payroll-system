@@ -61,13 +61,13 @@ export default function MobileSidebar({ setOpen }) {
     <div className="fixed inset-0 z-50 flex h-screen">
       {/* Backdrop */}
       <div
-        className="flex-1 bg-c-bg/20 backdrop-blur-xs bg-opacity-50"
+        className="flex-1 bg-black/20 backdrop-blur-xs bg-opacity-50"
         onClick={() => setOpen(false)}
       />
-      <div className="md:hidden block text-white">
-        <div className="bg-c-bg w-[16rem] sticky top-0 border-r border-r-white/10 h-screen">
+      <div className="md:hidden block text-gray-700">
+        <div className="bg-white w-[16rem] sticky top-0 border-r border-gray-200 h-screen">
           <div className="w-full space-y-2">
-            <div className="py-4 px-3 flex items-center justify-between gap-2 border-b border-b-white/10 h-fit">
+            <div className="py-4 px-3 flex items-center justify-between gap-2 border-b border-gray-100 h-fit">
               <div className="flex items-center gap-2">
                 <div className="w-8 h-8 rounded-full bg-c-color overflow-hidden">
                   <img src={user?.avatar} alt="" />
@@ -86,7 +86,7 @@ export default function MobileSidebar({ setOpen }) {
               </div>
             </div>
 
-            <div className="py-3 pr-3 flex flex-col gap-3 w-full border-b border-b-white/10">
+            <div className="py-3 pr-3 flex flex-col gap-3 w-full border-b border-gray-100">
               {data.map((item) => {
                 const match = matchPath(
                   { path: item.link, end: item.link === "/" },
@@ -118,7 +118,7 @@ export default function MobileSidebar({ setOpen }) {
                 );
               })}
             </div>
-            <div className="py-3 pr-3 flex flex-col gap-3 w-full border-b border-b-white/10">
+            <div className="py-3 pr-3 flex flex-col gap-3 w-full border-b border-gray-100">
               {data2.map((item) => {
                 const isActive = pathname === item.link;
                 return (
