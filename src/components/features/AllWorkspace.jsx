@@ -48,7 +48,7 @@ export default function AllWorkspace() {
                   No workspace yet!
                 </p>
                 <button
-                  className="bg-c-color hover:bg-emerald-600 px-6 py-2.5 text-white rounded-lg cursor-pointer"
+                  className="bg-c-color hover:bg-purple-600 px-6 py-2.5 text-white rounded-lg cursor-pointer"
                   onClick={() => setIsOpen(true)}
                 >
                   Create Workspace
